@@ -10,6 +10,7 @@ class Animal(object):
     @classmethod
     def make_baby(cls):
         color = choice(COLORS)
+        print(cls)
         return cls(color)
 
     @staticmethod
@@ -24,9 +25,21 @@ class Dog(Animal):
 
     @classmethod
     def make_baby(cls):
-
-        return super().make_baby()
+        print("making dog baby")
+        # We will do something dog specifics here
+        return super(Dog, cls).make_baby()
 
 
 class Cat(Animal):
     pass
+
+
+if __name__ == "__main__":
+    d = Dog("Brown")
+    print(d.color)
+
+    pup = d.make_baby()  # Which class do you think will be printed? Dog or Animal
+    print(pup.color)
+
+
+# So you can see that we also can override static methods in subclassing
