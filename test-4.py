@@ -43,3 +43,9 @@ if __name__ == "__main__":
 
 
 # So you can see that we also can override static methods in subclassing
+
+# Also see in this way: By using classmethod we could create new objects and also
+# do some caching. (see previous example)
+
+# Static methods does not keep states and usually we use them to organize some
+# related functions together in a class.
