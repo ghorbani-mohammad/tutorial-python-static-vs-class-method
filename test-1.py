@@ -20,6 +20,10 @@ class Item(object):
 if __name__ == "__main__":
     # The note here is that you can run both static method and class
     # method with the class itself and class object
+
+    # another note here is that static method has not any information
+    # about its class or the object that it is called upon
+
     i = Item(8)
     i.static_method()
     i.class_method()
