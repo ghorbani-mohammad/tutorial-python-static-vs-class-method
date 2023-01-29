@@ -1,1 +1,1 @@
-### Static methods vs Class methods
+#### Static methods vs Class methods
